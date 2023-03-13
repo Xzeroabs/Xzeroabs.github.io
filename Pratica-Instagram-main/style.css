@@ -1,0 +1,170 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font-family: Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background-color: #fafafa;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 935px;
+    padding-bottom: 32px;
+
+}
+
+.caixa {
+    background-color: #fff;
+    border:1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 10px 0;
+    margin: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 350px;
+}
+
+.logo {
+    margin: 22px auto 12px;
+}
+
+.caixa_input {
+    width: 268px;
+    height: 36px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    text-align: left;
+    position: relative;
+}
+
+input, input ~ span {
+    position: absolute;
+    width: 252px;
+    height: 36px;
+    background-color: transparent;
+    outline: none;
+    transition: width ease-out .1s;
+    left: 8px;
+    top: 10px;
+}
+
+input {
+    z-index: 2;
+}
+
+input ~ span {
+    user-select: none;
+    top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+input:focus {
+    font-size: 12px;
+    top: 5px;
+}
+
+input:focus ~ span {
+    top: 0;
+    font-size: 10px;
+}
+
+.entrar {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    background-color: #0095f6;
+    padding: 5px;
+    border-radius: 4px;
+    width: 268px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.ou {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.ou span b{
+    font-size: 12px;
+    color: #777
+}
+
+.ou div {
+    width: 40%;
+    height: 1px;
+    background-color: #aaa;
+}
+
+.facebook {
+    margin: 20px 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #158;
+    cursor: pointer;
+}
+
+.esqueceu {
+    margin-bottom: 10px;
+}
+
+.esqueceu a {
+    font-size: 12px;
+    color: #159;
+}
+
+.cadastrar {
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+.cadastrar a, .cadastrar a:visited {
+    color: #0ae;
+}
+
+.baixar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baixar p {
+    margin: 15px;
+}
+
+.botao_app a img {
+    width: 135px;
+    height: 40px;
+}
+
+footer p {
+    color: #aaa;
+}
+
+@media (max-width: 875px) {
+    .celular {
+        display: none;
+    }
+}
